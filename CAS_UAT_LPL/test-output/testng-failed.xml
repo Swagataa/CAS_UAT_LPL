@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CAS Regression_LPL_Suite]">
+  <listeners>
+    <listener class-name="utility.EmailableReporter"/>
+    <listener class-name="utility.ExecutionListerner"/>
+  </listeners>
+  <test name="CAS Regression_LPL_UAT(failed)">
+    <classes>
+      <class name="CAS_LPL_UAT.PDOC">
+        <methods>
+          <include name="Application_logout"/>
+          <include name="setupapplication"/>
+          <include name="PDOCDetails"/>
+        </methods>
+      </class> <!-- CAS_LPL_UAT.PDOC -->
+      <class name="CAS_LPL_UAT.Disbursal_Initiation">
+        <methods>
+          <include name="Application_logout"/>
+          <include name="setupapplication"/>
+          <include name="Disbursal" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- CAS_LPL_UAT.Disbursal_Initiation -->
+      <class name="CAS_LPL_UAT.Underwriting_LPL">
+        <methods>
+          <include name="Application_logout"/>
+          <include name="Underwriting" invocation-numbers="0"/>
+          <include name="setupapplication"/>
+        </methods>
+      </class> <!-- CAS_LPL_UAT.Underwriting_LPL -->
+      <class name="CAS_LPL_UAT.FI_Completion">
+        <methods>
+          <include name="Application_logout"/>
+          <include name="FI_Verification"/>
+          <include name="setupapplication"/>
+        </methods>
+      </class> <!-- CAS_LPL_UAT.FI_Completion -->
+      <class name="CAS_LPL_UAT.FI_Verification_LPL">
+        <methods>
+          <include name="FI_Verification"/>
+          <include name="Application_logout"/>
+          <include name="setupapplication"/>
+        </methods>
+      </class> <!-- CAS_LPL_UAT.FI_Verification_LPL -->
+      <class name="CAS_LPL_UAT.Disbursal_details">
+        <methods>
+          <include name="Application_logout"/>
+          <include name="Disbursal_detail"/>
+          <include name="setupapplication"/>
+        </methods>
+      </class> <!-- CAS_LPL_UAT.Disbursal_details -->
+    </classes>
+  </test> <!-- CAS Regression_LPL_UAT(failed) -->
+</suite> <!-- Failed suite [CAS Regression_LPL_Suite] -->

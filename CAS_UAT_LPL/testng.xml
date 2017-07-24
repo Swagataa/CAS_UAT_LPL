@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CAS Regression_LPL_Suite">
+<listeners>   
+	  <listener class-name="utility.EmailableReporter"/>
+      <listener class-name="utility.ExecutionListerner"/>
+</listeners>
+  <test name="CAS Regression_LPL_UAT">
+      <classes>
+      <class name="CAS_LPL_UAT.sourcing_comments"/>
+      <class name="CAS_LPL_UAT.FI_Verification_LPL"/>
+      <class name="CAS_LPL_UAT.FI_Completion"/>
+      <class name="CAS_LPL_UAT.Underwriting_LPL"/>
+      <class name="CAS_LPL_UAT.PDOC"/>
+      <class name="CAS_LPL_UAT.Disbursal_details"/>
+      <class name="CAS_LPL_UAT.Disbursal_Initiation"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
