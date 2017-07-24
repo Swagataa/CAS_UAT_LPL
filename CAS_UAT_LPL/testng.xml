@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="CAS Regression_LPL_Suite">
+<suite name="CAS UAT_LPL Regression Suite">
 <listeners>   
 	  <listener class-name="utility.EmailableReporter"/>
       <listener class-name="utility.ExecutionListerner"/>
