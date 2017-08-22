@@ -7,8 +7,13 @@
 </listeners>
   <test name="CAS Regression_LPL_UAT">
       <classes>
-      <class name="CAS_LPL_UAT.sourcing_comments"/>
-      <class name="CAS_LPL_UAT.FI_Verification_LPL"/>
+      <class name="CAS_LPL_UAT.sourcing"/>
+      <class name="CAS_LPL_UAT.DDE"/>
+      <class name="CAS_LPL_UAT.Dedupe_update"/>
+      <class name="CAS_LPL_UAT.Dedupe_Referral"/>
+      <class name="CAS_LPL_UAT.DDEQC"/>
+      <class name="CAS_LPL_UAT.FI_Initiation_four_checklist"/>
+      <class name="CAS_LPL_UAT.FI_Verification_four_checklist"/>
       <class name="CAS_LPL_UAT.FI_Completion"/>
       <class name="CAS_LPL_UAT.Underwriting_LPL"/>
       <class name="CAS_LPL_UAT.PDOC"/>

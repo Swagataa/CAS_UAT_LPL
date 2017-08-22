@@ -338,6 +338,22 @@ public class DDE extends BrowserSetup{
 		
 		Thread.sleep(2000);
 		
+		WebElement areacode = driver.findElement(By.id("txtStdisd"));
+		
+		wait.until(ExpectedConditions.visibilityOf(areacode));
+		
+		areacode.sendKeys("011");
+
+		Thread.sleep(1000);
+		
+		WebElement landline = driver.findElement(By.id("txtPhoneOne"));
+		
+		wait.until(ExpectedConditions.visibilityOf(landline));
+		
+		landline.sendKeys("49487150");
+		
+		Thread.sleep(1000);
+		
 		WebElement txtmobile = driver.findElement(By.id("txtMobile"));
 		
 		wait.until(ExpectedConditions.visibilityOf(txtmobile));		

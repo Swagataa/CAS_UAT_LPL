@@ -97,7 +97,7 @@ public class Underwriting_LPL extends BrowserSetup{
 
 		// Excel should start
 
-	//	searchappId.sendKeys(app_id);
+//		searchappId.sendKeys(app_id);
 
 		// Screenshotpath = fn_screenshot(Screenshotpath);
 
@@ -726,7 +726,7 @@ public class Underwriting_LPL extends BrowserSetup{
 
 		Thread.sleep(3000);
 
-		/*------------------ Cibil View File TWL -------------------------*/
+		/*------------------ Cibil View File TWL -------------------------
 
 		WebElement cibilviewfilebtn = driver.findElement(By.xpath("//form[@name='underWriterAF']/table[16]//tbody[1]/tr[3]/td[4]/input[1]"));
 
@@ -736,9 +736,9 @@ public class Underwriting_LPL extends BrowserSetup{
 
 		cibilviewfilebtn.click();
 		
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 
-		/*------------------- Cibil window -----------------------*/
+		/*------------------- Cibil window -----------------------
 
 		List<String> cibilviewfilewindow = new ArrayList<String>(driver.getWindowHandles());
 
@@ -872,7 +872,7 @@ public class Underwriting_LPL extends BrowserSetup{
 
 //		driver.switchTo().window(cibilviewfilewindow.get(0));
 
-		/*-----------------Return from Cibil Window  -----------------------*/
+		/*-----------------Return from Cibil Window  -----------------------
 
 		List<String> returncibilviewfilewindow = new ArrayList<String>(driver.getWindowHandles());
 
@@ -944,7 +944,7 @@ public class Underwriting_LPL extends BrowserSetup{
 
 		devApprovalbtn.click();
 		
-		Thread.sleep(1000);
+		Thread.sleep(6000);
 
 		/*----------- Deviation Approval Window --------- */
 
